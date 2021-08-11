@@ -25,5 +25,14 @@ Password: VueTrainingToshiba
 Session Recording: https://preetish.sharepoint.com/:v:/s/Preetish/EZ6yIfvQknpHmOeJxum4UkgBZJ3jwfkglzF5Zl0QO2UcmA?e=W9ZMa0
 Password: VueTrainingToshiba
 
+### Day 2: 
+1. Directives, loops and conditional syntax
+2. Lifecycle hooks
+3. Component communication	 (props and emit)
+4. Dynamic components 
+
+
+Session Recording: https://preetish.sharepoint.com/:v:/s/Preetish/ETnCa4ABgXBGimJsFBvK3DwBp0GdgjbXKHGgxEOC_tUaTg?e=fyEcDb
+Password: VueTrainingToshiba
 
 
