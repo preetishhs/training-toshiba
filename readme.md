@@ -35,4 +35,15 @@ Password: VueTrainingToshiba
 Session Recording: https://preetish.sharepoint.com/:v:/s/Preetish/ETnCa4ABgXBGimJsFBvK3DwBp0GdgjbXKHGgxEOC_tUaTg?e=fyEcDb
 Password: VueTrainingToshiba
 
+### Day 3: 
+1. Two-way binding for custom components
+2. Slots, named Slots and scoped slots
+3. Binding classes and styles (CSS) 
+4. Form input binding (Radio, Checkbox etc) 
+5. Events and event modifiers
+6. Keyboard events and modifiers
+
+
+Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/Eew9IiTS_AxPnB5ATuDYIQABru3k86Er0zsP8peg_ijXpw?e=dd1tJa
+Password: VueTrainingToshiba
 

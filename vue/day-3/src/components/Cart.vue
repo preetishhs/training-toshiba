@@ -1,6 +1,6 @@
 <template>
   <div class="cart">
-    <div class="page-title">Cart</div>
+    <div v-if="cartList.length">No Items in Cart</div>
     <div v-for="(item, i) in cartList" :key="i" class="cart-item">
       <div class="item-title">{{ item.title }}</div>
       <div class="price">{{ item.price }}</div>
@@ -19,19 +19,13 @@ export default {
           price: 20
         }
       ]
-    },
+    }
   }
 }
 </script>
 <style lang="scss" scoped>
-.page-title {
-  color: red;
-}
 .cart {
-  border: 1px solid black;
-  border-radius: 5px;
   padding: 10px;
-  width: 300px;
-  height: 300px;
+  background: #fff;
 }
 </style>

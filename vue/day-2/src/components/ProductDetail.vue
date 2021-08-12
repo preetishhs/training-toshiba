@@ -23,23 +23,23 @@ import Features from '@/components/Features'
 export default {
   components: {
     Specs,
-    Review,
+    Review
   },
   props: {
     product: {
-      type: Object,
-    },
+      type: Object
+    }
   },
   data() {
     return {
-      currentComponent: Features,
+      currentComponent: Features
     }
   },
   methods: {
     changeTab(comp) {
       this.currentComponent = comp
-    },
-  },
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>

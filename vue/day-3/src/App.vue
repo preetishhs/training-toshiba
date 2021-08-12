@@ -1,16 +1,36 @@
 <template>
   <h1 class="page-title">{{ title }}</h1>
-  <div v-if="!showProductDetail" class="product-container">
+  <div v-show="!showProductDetail" class="product-container">
     <Product
       v-for="item in products"
       :key="item.id"
       :productItem="item"
       @add-item="addToCart"
-      @click="showProduct(item)"
+      @click.right.ctrl="showProduct(item)"
     />
   </div>
-  <Cart :cartList="cartList" class="cart" />
-  <ProductDetail v-if="showProductDetail" :product="selected" />
+
+  <ProductDetail
+    v-if="showProductDetail"
+    :product="selected"
+    v-model:show="showProductDetail"
+  />
+  <modal v-if="showCart" @closed="showCart = false">
+    <template v-slot:header="{ fallback }"> {{ fallback }} </template>
+    <Cart :cartList="cartList" />
+    <template v-slot:footer>
+      <button>Proceed to Checkout</button>
+    </template>
+    Test
+  </modal>
+  <modal
+    v-if="showSignUp"
+    @closed="showSignUp = false"
+    :width="900"
+    :height="800"
+  >
+    <SignUp />
+  </modal>
 </template>
 
 <script>
@@ -18,16 +38,22 @@ import Product from '@/components/Product'
 import ProductDetail from '@/components/ProductDetail'
 import Cart from '@/components/Cart'
 import { productList } from '@/utils/products'
+import Modal from '@/components/Modal'
+import SignUp from '@/components/SignUp'
 export default {
   name: 'App',
   components: {
     Product,
     Cart,
-    ProductDetail
+    ProductDetail,
+    Modal,
+    SignUp
   },
   data() {
     return {
       selected: {},
+      showCart: false,
+      showSignUp: false,
       showProductDetail: false,
       title: 'My Shopping Cart',
       cartList: [],
@@ -41,6 +67,7 @@ export default {
     addToCart(product) {
       console.log('called')
       this.cartList.push(product)
+      this.showCart = true
     },
     showProduct(product) {
       this.selected = product
@@ -58,11 +85,6 @@ export default {
 .product-container {
   display: flex;
   flex-wrap: wrap;
-}
-.cart {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 .product-card {
   background-color: #d1d1d1;
