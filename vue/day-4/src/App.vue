@@ -1,20 +1,24 @@
 <template>
   <h1 class="page-title">{{ title }}</h1>
-  <div v-show="!showProductDetail" class="product-container">
+  <Navbar @selected="filterProducts" />
+  <button @click="showPage = 'profile'">My Profile</button>
+  <div v-show="showPage === 'products'" class="product-container">
     <Product
       v-for="item in products"
       :key="item.id"
       :productItem="item"
       @add-item="addToCart"
-      @click.right.ctrl="showProduct(item)"
+      @click="showProduct(item)"
+      @delete-item="deleteItem"
     />
   </div>
 
   <ProductDetail
-    v-if="showProductDetail"
-    :product="selected"
-    v-model:show="showProductDetail"
+    v-if="showPage === 'productItem'"
+    :product-id="selected.id"
+    v-model:show="showPage"
   />
+  <Profile v-if="showPage === 'profile'" />
   <modal v-if="showCart" @closed="showCart = false">
     <template v-slot:header="{ fallback }"> {{ fallback }} </template>
     <Cart :cartList="cartList" />
@@ -36,9 +40,16 @@
 import Product from '@/components/Product'
 import ProductDetail from '@/components/ProductDetail'
 import Cart from '@/components/Cart'
-import { productList } from '@/utils/products'
 import Modal from '@/components/Modal'
 import SignUp from '@/components/SignUp'
+import Navbar from '@/components/Navbar'
+import Profile from '@/components/Profile'
+import {
+  fetchProducts,
+  getProductInCategory,
+  deleteProduct
+} from '@/services/product'
+
 export default {
   name: 'App',
   components: {
@@ -46,21 +57,25 @@ export default {
     Cart,
     ProductDetail,
     Modal,
-    SignUp
+    SignUp,
+    Navbar,
+    Profile
   },
   data() {
     return {
       selected: {},
       showCart: false,
       showSignUp: false,
-      showProductDetail: false,
+      showPage: 'products',
       title: 'My Shopping Cart',
       cartList: [],
       products: []
     }
   },
-  mounted() {
-    this.products = productList
+  created() {
+    fetchProducts().then((res) => {
+      this.products = res
+    })
   },
   methods: {
     addToCart(product) {
@@ -70,7 +85,19 @@ export default {
     },
     showProduct(product) {
       this.selected = product
-      this.showProductDetail = true
+      this.showPage = 'productItem'
+    },
+    filterProducts(filter) {
+      getProductInCategory(filter).then((res) => {
+        this.products = res
+      })
+    },
+    deleteItem(id) {
+      deleteProduct(id).then(() => {
+        this.products = this.products.filter((item) => {
+          return item.id !== id
+        })
+      })
     }
   }
 }

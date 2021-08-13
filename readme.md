@@ -28,11 +28,11 @@ Password: VueTrainingToshiba
 ### Day 2: 
 1. Directives, loops and conditional syntax
 2. Lifecycle hooks
-3. Component communication	 (props and emit)
+3. Component communication (props and emit)
 4. Dynamic components 
 
 
-Session Recording: https://preetish.sharepoint.com/:v:/s/Preetish/ETnCa4ABgXBGimJsFBvK3DwBp0GdgjbXKHGgxEOC_tUaTg?e=fyEcDb
+Session Recording: https://preetish.sharepoint.com/:v:/s/Preetish/ETnCa4ABgXBGimJsFBvK3DwBQ-UlGeJPK37vue5W6iNXKw?e=jdHqXF
 Password: VueTrainingToshiba
 
 ### Day 3: 
@@ -46,4 +46,14 @@ Password: VueTrainingToshiba
 
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/Eew9IiTS_AxPnB5ATuDYIQABru3k86Er0zsP8peg_ijXpw?e=dd1tJa
 Password: VueTrainingToshiba
+
+### Day 4: 
+1. REST API Intro
+2. HTTP Codes
+3. Using Axios to Make API Calls
+
+
+Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EWQNyREVc2pArheR2YD-owwBMtmRaLXhUVG8obIvnSmZTw?e=8fBjUq
+Password: VueTrainingToshiba
+
 

@@ -35,6 +35,7 @@
 import Specs from '@/components/Specs'
 import Review from '@/components/Review'
 import Features from '@/components/Features'
+import { fetchProductItem } from '@/services/product'
 export default {
   components: {
     Specs,
@@ -42,8 +43,8 @@ export default {
     Features
   },
   props: {
-    product: {
-      type: Object
+    productId: {
+      type: Number
     },
     show: {
       type: Boolean
@@ -51,6 +52,7 @@ export default {
   },
   data() {
     return {
+      product: null,
       green: 'green',
       random: '',
       tabStyles: {
@@ -60,13 +62,18 @@ export default {
       currentComponent: 'Features'
     }
   },
+  created() {
+    fetchProductItem(this.productId).then((res) => {
+      this.product = res
+    })
+  },
   methods: {
     changeTab(comp) {
       this.random = 'hightlight'
       this.currentComponent = comp
     },
     goBack() {
-      this.$emit('update:show', false)
+      this.$emit('update:show', 'products')
     },
     classObj(current) {
       return {
