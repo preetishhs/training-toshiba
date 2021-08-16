@@ -42,17 +42,10 @@ export default {
     Review,
     Features
   },
-  props: {
-    productId: {
-      type: Number
-    },
-    show: {
-      type: Boolean
-    }
-  },
   data() {
     return {
       product: null,
+      productId: '',
       green: 'green',
       random: '',
       tabStyles: {
@@ -63,7 +56,11 @@ export default {
     }
   },
   created() {
+    this.productId = this.$route.params.productId
     fetchProductItem(this.productId).then((res) => {
+      if (!res) {
+        this.$router.push({ name: 'notFound' })
+      }
       this.product = res
     })
   },
@@ -71,9 +68,6 @@ export default {
     changeTab(comp) {
       this.random = 'hightlight'
       this.currentComponent = comp
-    },
-    goBack() {
-      this.$emit('update:show', 'products')
     },
     classObj(current) {
       return {

@@ -13,11 +13,11 @@ const api = axios.create(config)
 api.interceptors.request.use(
   (response) => {
     //log to logging server
-    console.log('Request Sent succesfully', response)
+    // console.log('Request Sent succesfully', response)
     return response
   },
   (error) => {
-    console.log('Request sending Error', error)
+    // console.log('Request sending Error', error)
     return error
   }
 )
@@ -25,11 +25,11 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => {
     //log to logging server
-    console.log('Response recieved succesfully', response)
+    // console.log('Response recieved succesfully', response)
     return response
   },
   (error) => {
-    console.log('Response Error', error)
+    // console.log('Response Error', error)
     return error
   }
 )

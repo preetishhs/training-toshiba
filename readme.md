@@ -56,4 +56,19 @@ Password: VueTrainingToshiba
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EWQNyREVc2pArheR2YD-owwBMtmRaLXhUVG8obIvnSmZTw?e=8fBjUq
 Password: VueTrainingToshiba
 
+### Day 5:
+1. Axios Instance
+2. Axios Interceptors
+3. Introduction to Vue router
+4. Creating routes and navigation
+5. Navigating via code
+6. Dynamic routing and query parameters
+7. Child routes / Nested routes
+8. Handing 404 route
+9. Styling Active route
+
+Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/Ebp-9WVxfkhGgsdvXKYKP_EBpfH-k2L4H-Br6icfJYor2w?e=7ynkgd
+
+
+
 

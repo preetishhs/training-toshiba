@@ -1,5 +1,5 @@
 <template>
-  <div class="profile">
+  <div class="personal">
     <h3>Profile Section</h3>
     <div class="item">
       <div class="name">FirstName</div>

@@ -7,7 +7,9 @@
         class="nav-item"
         @click="categorySelected(item)"
       >
-        {{ item }}
+        <router-link :to="{ name: 'category', params: { categoryName: item } }">
+          {{ item }}
+        </router-link>
       </div>
     </div>
     <div class="filter-container">

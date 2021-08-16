@@ -10,7 +10,7 @@ export default {
   name: 'Count',
   data() {
     return {
-      count: 0,
+      count: 0
     }
   },
   computed: {
@@ -20,7 +20,7 @@ export default {
       } else {
         return 'No'
       }
-    },
+    }
   },
   watch: {
     count(newVal, oldVal) {
@@ -33,7 +33,7 @@ export default {
       if (newVal === 'Yes') {
         alert('Multiple of 5 detected')
       }
-    },
+    }
   },
   methods: {
     increment() {
@@ -41,7 +41,7 @@ export default {
     },
     decrement() {
       this.count--
-    },
-  },
+    }
+  }
 }
 </script>
