@@ -61,6 +61,11 @@ const routes = [
     component: () => import('@/views/Cart')
   },
   {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/Login')
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'notFound',
     component: NotFound

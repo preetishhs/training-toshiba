@@ -11,6 +11,9 @@
           {{ item }}
         </router-link>
       </div>
+      <div class="nav-item">
+        <router-link :to="{ name: 'cart' }"> Cart </router-link>
+      </div>
     </div>
     <div class="filter-container">
       <select v-model="limit">

@@ -25,9 +25,23 @@ export default {
       products: []
     }
   },
-  async created() {
-    this.categoryName = this.$route.params.categoryName
-    this.products = await getProductInCategory({ category: this.categoryName })
+  watch: {
+    $route: {
+      handler() {
+        console.log('triggered')
+        this.getProducts()
+      },
+      deep: true,
+      immediate: true
+    }
+  },
+  methods: {
+    async getProducts() {
+      this.categoryName = this.$route.params.categoryName
+      this.products = await getProductInCategory({
+        category: this.categoryName
+      })
+    }
   }
 }
 </script>

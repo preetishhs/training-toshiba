@@ -8,6 +8,7 @@
   </div>
 </template>
 <script>
+import { mapActions } from 'vuex'
 export default {
   props: {
     productItem: {
@@ -15,10 +16,11 @@ export default {
       required: true
     }
   },
-  emits: ['addItem', 'deleteItem'],
+  emits: ['deleteItem'],
   methods: {
+    ...mapActions(['setCartList']),
     addToCart() {
-      this.$emit('addItem', this.productItem)
+      this.setCartList(this.productItem)
     },
     deleteProduct() {
       this.$emit('deleteItem', this.productItem.id)

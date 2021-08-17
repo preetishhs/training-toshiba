@@ -1,24 +1,22 @@
 <template>
   <div class="cart">
-    <div v-if="!cartList.length">No Items in Cart</div>
-    <div v-for="(item, i) in cartList" :key="i" class="cart-item">
+    <h2>Cart</h2>
+    <div v-if="!$store.state.cartList.length">No Items in Cart</div>
+    <div v-for="(item, i) in $store.state.cartList" :key="i" class="cart-item">
       <div class="item-title">{{ item.title }}</div>
       <div class="price">{{ item.price }}</div>
+      <div class="quantity">{{ item.quantity }}</div>
+      <button class="remove" @click="removeItem(item)">Remove</button>
     </div>
   </div>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 export default {
-  props: {
-    cartList: {
-      type: Array,
-      required: false,
-      default: () => [
-        {
-          title: 'Some title',
-          price: 20
-        }
-      ]
+  methods: {
+    ...mapMutations(['REMOVE_CART_ITEM']),
+    removeItem(product) {
+      this.REMOVE_CART_ITEM(product)
     }
   }
 }
@@ -29,7 +27,16 @@ export default {
   background: #fff;
   .cart-item {
     display: flex;
-    justify-content: space-between;
+    margin: 20px;
+  }
+  .price {
+    margin-left: 20px;
+  }
+  .quantity {
+    margin-left: 20px;
+  }
+  .remove {
+    margin-left: 20px;
   }
 }
 </style>

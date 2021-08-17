@@ -68,6 +68,18 @@ Password: VueTrainingToshiba
 9. Styling Active route
 
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/Ebp-9WVxfkhGgsdvXKYKP_EBpfH-k2L4H-Br6icfJYor2w?e=7ynkgd
+Password: VueTrainingToshiba
+
+### Day 6:
+1. Code splitting (lazy loading)
+2. Introduction to Vuex and State management
+3. Storing and manipulating data in Vuex
+4. Using Vuex in Components
+5. Using Vuex helpers
+
+
+Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EZktiUiVPNlIgRQtnP9Ex5gBq6tdBjJOEBbK5E_-CI_dOA?e=amJHO7
+Password: VueTrainingToshiba
 
 
 

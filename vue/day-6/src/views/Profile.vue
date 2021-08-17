@@ -17,7 +17,19 @@
   </div>
 </template>
 <script>
-export default {}
+import { mapState } from 'vuex'
+export default {
+  computed: {
+    ...mapState({
+      loggedIn: (state) => state.isLoggedIn
+    })
+  },
+  created() {
+    if (!this.loggedIn) {
+      this.$router.push({ name: 'login' })
+    }
+  }
+}
 </script>
 <style lang="scss" scoped>
 .profile {

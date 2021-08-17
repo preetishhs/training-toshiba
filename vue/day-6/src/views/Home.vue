@@ -1,10 +1,9 @@
 <template>
   <div class="product-container">
     <Product
-      v-for="item in products"
+      v-for="item in filterdProducts"
       :key="item.id"
       :productItem="item"
-      @add-item="addToCart"
       @click="showProduct(item)"
     />
   </div>
@@ -12,33 +11,20 @@
 
 <script>
 import Product from '@/components/Product'
-// const Cart = () => import(/* webpackChunkName: 'cart'*/ '@/components/Cart')
-// const Modal = () => import(/* webpackChunkName: 'modal'*/ '@/components/Modal')
-import { fetchProducts } from '@/services/product'
-
+import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'Home',
   components: {
     Product
   },
-  data() {
-    return {
-      showCart: false,
-      cartList: [],
-      products: []
-    }
+  computed: {
+    ...mapGetters(['filterdProducts'])
   },
   created() {
-    fetchProducts().then((res) => {
-      this.products = res
-    })
+    this.getProductList()
   },
   methods: {
-    addToCart(product) {
-      console.log('called')
-      this.cartList.push(product)
-      this.showCart = true
-    },
+    ...mapActions(['getProductList']),
     showProduct(product) {
       this.$router.push({ name: 'product', params: { productId: product.id } })
     }
