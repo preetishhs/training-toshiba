@@ -81,6 +81,16 @@ Password: VueTrainingToshiba
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EZktiUiVPNlIgRQtnP9Ex5gBq6tdBjJOEBbK5E_-CI_dOA?e=amJHO7
 Password: VueTrainingToshiba
 
+### Day 6:
+1. Namespaced store and modules
+2. Navigation Guards (Local and Global)
+3. Persisted State
+4. Introduction to Mixins and code sharing
+
+
+Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EdUQMpjl9U9Ll5gkP8PUuTEBd4wU0kZuWV5-7Zlfhxeclg?e=ubuUG0
+Password: VueTrainingToshiba
+
 
 
 
