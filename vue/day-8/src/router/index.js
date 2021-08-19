@@ -73,6 +73,11 @@ const routes = [
     component: () => import('@/views/SignUp')
   },
   {
+    path: '/lang-test',
+    name: 'langTest',
+    component: () => import('@/views/I18nTest')
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'notFound',
     component: NotFound

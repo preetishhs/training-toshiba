@@ -1,0 +1,14 @@
+{
+  "pageTitle": "My Shopping Cart",
+  "login": {
+    "title": "Login",
+    "username": "User Name",
+    "password": "Password",
+    "signup": "Sign Up"
+  },
+  "toast": {
+    "loggedIn": "Hello! { currentUserName }! Welcome.",
+    "guest": "Hello Guest!"
+  },
+  "products": "Product | Products"
+}

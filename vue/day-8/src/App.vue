@@ -1,6 +1,6 @@
 <template>
   <router-link :to="{ name: 'home' }" custom v-slot="{ navigate }">
-    <h1 class="page-title" @click="navigate">{{ title }}</h1>
+    <h1 class="page-title" @click="navigate">{{ $t('pageTitle') }}</h1>
   </router-link>
   <Navbar color="red" nav-title="Cat:" />
   <router-view></router-view>
@@ -11,11 +11,6 @@ export default {
   name: 'App',
   components: {
     Navbar
-  },
-  data() {
-    return {
-      title: 'My Shopping Cart'
-    }
   }
 }
 </script>

@@ -18,6 +18,7 @@
         <button @click="navigateToProfile">My Profile</button>
         <button v-if="!isLoggedIn" @click="login">Login</button>
         <button v-else @click="logout">Logout</button>
+        <LocaleSwitcher />
       </div>
     </div>
     <div class="filter-container">
@@ -35,7 +36,11 @@ import { getCategoryList } from '@/services/product'
 import { ref, computed, watch, onMounted } from 'vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
+import LocaleSwitcher from '@/components/LocaleSwitcher'
 export default {
+  components: {
+    LocaleSwitcher
+  },
   emits: ['selected'],
   props: {
     color: {

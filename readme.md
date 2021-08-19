@@ -81,7 +81,7 @@ Password: VueTrainingToshiba
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EZktiUiVPNlIgRQtnP9Ex5gBq6tdBjJOEBbK5E_-CI_dOA?e=amJHO7
 Password: VueTrainingToshiba
 
-### Day 6:
+### Day 7:
 1. Namespaced store and modules
 2. Navigation Guards (Local and Global)
 3. Persisted State
@@ -91,6 +91,19 @@ Password: VueTrainingToshiba
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EdUQMpjl9U9Ll5gkP8PUuTEBd4wU0kZuWV5-7Zlfhxeclg?e=ubuUG0
 Password: VueTrainingToshiba
 
+### Day 8:
+1. Composition API
+2. Sharing code via Composition Functions
+3. Introduction to Vue-i18n and Internationalization
+4. Creating translation files
+5. Using translation in templates and JavaScript
+6. Switching languages
+7. Number localization
+8. Singular/plural localization
+
+
+Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/Ec862knDYl5Lj_QEA4N2argBKKhXDX4Xkkgi2tUq9XwDeg?e=SzSdth
+Password: VueTrainingToshiba
 
 
 

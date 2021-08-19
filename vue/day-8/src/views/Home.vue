@@ -1,5 +1,6 @@
 <template>
   <div class="toast">{{ getToastMessage }}</div>
+  <h2>{{ $tc('products', filterdProducts.length) }}</h2>
   <div class="product-container">
     <Product
       v-for="item in filterdProducts"

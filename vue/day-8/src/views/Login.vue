@@ -1,19 +1,19 @@
 <template>
   <div class="login">
-    <h2>Login</h2>
+    <h2>{{ t('login.title') }}</h2>
     <div class="item">
-      <label> Username: </label>
+      <label> {{ t('login.username') }} </label>
       <input type="text" v-model="user.username" />
     </div>
     <div class="item">
-      <label> Password: </label>
+      <label> {{ t('login.password') }}: </label>
       <input type="password" v-model="user.password" />
     </div>
     <div class="item">
-      <button @click="login">Login</button>
+      <button @click="login">{{ t('login.title') }}</button>
     </div>
     <div class="item">
-      <button @click="signup">Sign Up</button>
+      <button @click="signup">{{ t('login.signup') }}</button>
     </div>
   </div>
 </template>
@@ -21,10 +21,12 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useStore } from 'vuex'
+import { useI18n } from 'vue-i18n'
 export default {
   setup() {
     const router = useRouter()
     const store = useStore()
+    const { t } = useI18n()
     const user = ref({
       username: '',
       password: ''
@@ -39,7 +41,8 @@ export default {
     return {
       user,
       login,
-      signup
+      signup,
+      t
     }
   }
   // data() {
