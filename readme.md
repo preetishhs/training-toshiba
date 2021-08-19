@@ -101,6 +101,15 @@ Password: VueTrainingToshiba
 7. Number localization
 8. Singular/plural localization
 
+Important Links:
+
+[Intl Browser Library](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
+
+[Different localization metrics](https://formatjs.io/docs/polyfills/intl-numberformat/#simple-units)
+
+[Currencies](https://tc39.es/ecma402/#locales-currencies-tz)
+
+[Date Formats](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat)
 
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/Ec862knDYl5Lj_QEA4N2argBKKhXDX4Xkkgi2tUq9XwDeg?e=SzSdth
 Password: VueTrainingToshiba
