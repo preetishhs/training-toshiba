@@ -114,5 +114,13 @@ Important Links:
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/Ec862knDYl5Lj_QEA4N2argBKKhXDX4Xkkgi2tUq9XwDeg?e=SzSdth
 Password: VueTrainingToshiba
 
+### Day 9:
+1. Fetching browser language
+2. Persisting Language selection
+3. Date Localization
+4. Unit Testing theory
+5. Understanding what to test
+6. Testing components, triggering events, emits
 
-
+Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EaWil7DgmoxDgf32cfONmgYBlPDfVJ0-eDKmJQxaAtcLKA?e=diRzhM
+Password: VueTrainingToshiba

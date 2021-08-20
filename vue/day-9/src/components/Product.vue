@@ -3,8 +3,8 @@
     <img :src="productItem.image" class="product-img" />
     <p class="product-title">{{ upperCase(productItem.title) }}</p>
     <p class="product-price">{{ $n(productItem.price, 'currency') }}</p>
-    <button @click.stop="addToCart">Add to Cart</button>
-    <button @click.stop="deleteProduct">Delete</button>
+    <button class="add-to-cart" @click.stop="addToCart">Add to Cart</button>
+    <button class="delete-item" @click.stop="deleteProduct">Delete</button>
   </div>
 </template>
 <script>
