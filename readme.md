@@ -124,3 +124,16 @@ Password: VueTrainingToshiba
 
 Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EaWil7DgmoxDgf32cfONmgYBlPDfVJ0-eDKmJQxaAtcLKA?e=diRzhM
 Password: VueTrainingToshiba
+
+### Day 9:
+1. Testing if a Vue Component is present
+2. Testing Conditionals
+3. Testing Dynamic Components
+4. Testing Slots
+5. Testing Router
+6. Extracting out wrapper method
+7. Testing Vuex
+8. Testing API Calls 
+
+Session Recording: https://preetish-my.sharepoint.com/:v:/g/personal/contact_preetish_onmicrosoft_com/EXbWram0P8ZOmU2OsSs3K6IB8syzSgoM-Ll0KfV08D631A?e=zOQLFl
+Password: VueTrainingToshiba

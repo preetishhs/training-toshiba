@@ -1,0 +1,9 @@
+{
+  "pageTitle": "Mon panier",
+  "login": {
+    "title": "Connexion",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "signup": "S'inscrire"
+  }
+}

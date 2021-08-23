@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product card tests check if rendered product card matches snapshot 1`] = `
+<div
+  class="product-card"
+>
+  <img
+    class="product-img"
+    src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+  />
+  <p
+    class="product-price"
+  />
+  <p
+    class="product-title"
+  >
+    FJALLRAVEN - FOLDSACK NO. 1 BACKPACK, FITS 15 LAPTOPS
+  </p>
+  <button
+    class="add-to-cart"
+  >
+    Add to Cart
+  </button>
+  <button
+    class="delete-item"
+  >
+    Delete
+  </button>
+</div>
+`;
